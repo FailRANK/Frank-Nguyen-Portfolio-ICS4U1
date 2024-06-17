@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frank Nguyen Portfolio</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .button1 {
+        background-color: #2c2e3a;
+        color: #ffffff;
+        font-size: 30px;
+        border-radius: 12px;
+        border: 1x solid black;
+    }
+    .button2 {
+        background-color: #e3e6ef;
+        font-size: 30px;
+        border-radius: 12px;
+        border: 1px solid black;
+    }
+    p{
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div class="container">
+        <button class="button2" type="button" id="H">Home</button>
+        <button class="button1" type="button" id="A">About</button>
+        <button class="button2" type="button" id="W">Work</button>
+        <button class="button2" type="button" id="C">Contact</button>
+    </div>
+    <p>I'm Frank Nguyen, 18 years old, I'll be attending TMU (Toronto Metropolitan University) for International Economics and Finance in fall of 2024. 
+    I took computer science and engineering classes. I like to code recreationally, making programs, games, or mods.</p>
+    <center><img src="img/me.png" alt="Frank Nguyen"></center>
+</body>
+<script>
+    function H(){
+        console.log("Home")
+        window.location.replace("home.html")
+    }
+    function A(){
+        console.log("About")
+        window.location.replace("about.html")
+    }
+    function W(){
+        console.log("Work")
+        window.location.replace("work.html")
+    }
+    function C(){
+        console.log("Contact")
+        window.location.replace("contact.html")
+    }
+    document.getElementById("H").addEventListener("click", () => H())
+    document.getElementById("A").addEventListener("click", () => A())
+    document.getElementById("W").addEventListener("click", () => W())
+    document.getElementById("C").addEventListener("click", () => C())
+</script>
+</html>
